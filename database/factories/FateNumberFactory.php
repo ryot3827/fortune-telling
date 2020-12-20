@@ -23,7 +23,7 @@ class FateNumberFactory extends Factory
     {
         return [
             'fate_number'=>$this->faker->numberBetween(0, 11),
-            'content'=>$this->faker->sentences()
+            'content'=>$this->faker->sentence,
         ];
     }
 }

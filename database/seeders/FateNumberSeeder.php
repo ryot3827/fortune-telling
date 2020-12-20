@@ -14,6 +14,6 @@ class FateNumberSeeder extends Seeder
      */
     public function run()
     {
-        FateNumber::factory()->count(1)->create();
+        FateNumber::factory()->create();
     }
 }

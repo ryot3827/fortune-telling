@@ -13,9 +13,11 @@ class CreateFateNumberTable extends Migration
      */
     public function up()
     {
-        Schema::create('fate_number', function (Blueprint $table) {
+        Schema::create('fate_numbers', function (Blueprint $table) {
             $table->integer('fate_number');
             $table->text('content');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 
@@ -26,6 +28,6 @@ class CreateFateNumberTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('fate_number');
+        Schema::dropIfExists('fate_numbers');
     }
 }
